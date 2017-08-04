@@ -1,0 +1,54 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            a
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-toolbar>
+    <ion-buttons start="" class="bar-buttons bar-buttons-ios">
+        <button icon-only="" ion-button=""
+                class="bar-button bar-button-default"><span
+                class="button-inner">
+        <ion-icon name="globe" role="img" class="icon icon-ios ion-ios-globe" aria-label="globe"></ion-icon>
+      </span>
+            <div class="button-effect"></div>
+        </button>
+    </ion-buttons>
+    <ion-buttons end="" class="bar-buttons bar-buttons-ios">
+        <button icon-only="" ion-button=""
+                class="bar-button bar-button-default"><span
+                class="button-inner">
+        <ion-icon name="more" role="img" class="icon icon-ios ion-more" aria-label="more"></ion-icon>
+      </span>
+            <div class="button-effect"></div>
+        </button>
+    </ion-buttons>
+
+
+        <ion-select [(ngModel)]="gender" placeholder="Trials" class="trial-select">
+            <ion-option value="f">Trials</ion-option>
+            <ion-option value="m">Trials 2</ion-option>
+        </ion-select>
+
+
+</ion-toolbar>
+
+<ion-content>
+    <h2>trial page</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad asperiores aut blanditiis consequatur
+        distinctio dolor doloribus dolorum, ducimus eligendi exercitationem illo libero nam nesciunt porro qui
+        rem suscipit voluptatum. Eligendi.</p>
+    <ion-tabs>
+        <ion-tab [root]="tab1Root" tabTitle="Trials" tabIcon="home"></ion-tab>
+        <ion-tab [root]="tab2Root" tabTitle="Resources" tabIcon="information-circle"></ion-tab>
+        <ion-tab [root]="tab3Root" tabTitle="Contact Pfizer" tabIcon="contacts"></ion-tab>
+        <ion-tab [root]="tab4Root" tabTitle="Notifications" tabIcon="contacts"></ion-tab>
+        <ion-tab [root]="tab5Root" tabTitle="Settings" tabIcon="contacts"></ion-tab>
+    </ion-tabs>
+
+    <p>Lorem ipsum dolor.</p>
+
+
+</ion-content>

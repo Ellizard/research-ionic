@@ -1,0 +1,24 @@
+.bottom-buttons {
+
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    button {
+      margin-bottom: 10px;
+      width: 80%;
+    }
+    a {
+      display: block;
+    }
+}
+
+.trial-select {
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 40px;
+}
+
