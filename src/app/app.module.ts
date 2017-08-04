@@ -18,6 +18,8 @@ import {TabsPage} from '../pages/tabs/tabs';
 
 import {StatusBar} from '@ionic-native/status-bar';
 import {SplashScreen} from '@ionic-native/splash-screen';
+import {LicensePage} from "../pages/license/license";
+import {PersonalinfoPage} from "../pages/personalinfo/personalinfo";
 
 
 
@@ -33,6 +35,8 @@ import {SplashScreen} from '@ionic-native/splash-screen';
         ResourcesPage,
         NotificationPage,
         SettingsPage,
+        LicensePage,
+        PersonalinfoPage,
         TabsPage
     ],
     imports: [
@@ -51,6 +55,8 @@ import {SplashScreen} from '@ionic-native/splash-screen';
         NotificationPage,
         SettingsPage,
         TrialPage,
+        LicensePage,
+        PersonalinfoPage,
         TabsPage
     ],
     providers: [

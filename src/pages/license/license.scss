@@ -1,0 +1,25 @@
+page-license {
+  .license-box {
+    padding: 5px 15px;
+    border: 1px solid black;
+    max-height: 55%;
+    overflow: auto;
+    p {
+      font-size: 10px;
+    }
+  }
+  p {
+    margin-top: 0;
+    &.note {
+      font-size: 8px;
+      color: gold;
+      padding: 0 30px;
+    }
+  }
+  img {
+    max-width: 110px;
+    display: block;
+    margin: 10px auto 20px;
+  }
+
+}
