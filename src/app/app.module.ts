@@ -20,6 +20,7 @@ import {StatusBar} from '@ionic-native/status-bar';
 import {SplashScreen} from '@ionic-native/splash-screen';
 import {LicensePage} from "../pages/license/license";
 import {PersonalinfoPage} from "../pages/personalinfo/personalinfo";
+import {MyinfoPage} from "../pages/myinfo/myinfo";
 
 
 
@@ -37,6 +38,7 @@ import {PersonalinfoPage} from "../pages/personalinfo/personalinfo";
         SettingsPage,
         LicensePage,
         PersonalinfoPage,
+        MyinfoPage,
         TabsPage
     ],
     imports: [
@@ -57,6 +59,7 @@ import {PersonalinfoPage} from "../pages/personalinfo/personalinfo";
         TrialPage,
         LicensePage,
         PersonalinfoPage,
+        MyinfoPage,
         TabsPage
     ],
     providers: [

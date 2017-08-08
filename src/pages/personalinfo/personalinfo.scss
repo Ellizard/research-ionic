@@ -2,4 +2,71 @@ page-personalinfo{
   .list-ios > .item-block:first-child {
     border: none;
   }
+
+
+  .male-female {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    &.list-ios .item-block .item-inner {
+      border: none;
+    }
+    .item-inner {
+      border: none;
+    }
+    .item-ios .radio-ios {
+      margin: 0;
+    }
+    .radio {
+      .radio-icon {
+        .radio-inner {
+          border: none;
+        }
+      }
+    }
+    .icon {
+      margin-right: 5px;
+      position: relative;
+    }
+  }
+
+  .male,
+  .female {
+    display: inline-block;
+    text-align: center;
+    width: 48%;
+    border: 1px solid map-get($colors, primary) !important;
+    border-radius: 5px;
+    max-width: 200px;
+    .label {
+      color: map-get($colors, primary);
+    }
+    &.item-radio-checked {
+      background: map-get($colors, primary);
+      .label {
+        color: white;
+      }
+    }
+    button {
+      margin: 0;
+      padding: 0;
+    }
+  }
+  .male {
+    border-radius: 5px 0 0 5px;
+  }
+  .female {
+    border-radius: 0 5px 5px 0;
+  }
+
+  .male-female {
+    &.list-ios .item-block .item-inner {
+      border: none;
+    }
+
+  }
+
+
 }

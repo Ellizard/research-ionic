@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>My Info</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+
+
+
+
+<ion-content padding>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+  <ion-searchbar
+          [(ngModel)]="myInput"
+          [showCancelButton]="shouldShowCancel"
+          (ionInput)="onInput($event)"
+          (animated)="true"
+          (ionCancel)="onCancel($event)">
+  </ion-searchbar>
+
+
+
+
+  <ion-item-sliding>
+    <ion-item>
+      Item 1
+    </ion-item>
+    <ion-item-options side="right" (ionSwipe)="saveItem(item)">
+      <button ion-button expandable (click)="saveItem(item)">
+        <ion-icon name="star"></ion-icon>
+      </button>
+    </ion-item-options>
+  </ion-item-sliding>
+
+  <button (click)="showBlock()">bla bla</button>
+  <div class="toggle-block" *ngIf="status">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus at atque corporis deleniti, dicta dolorem
+      eligendi fugiat illum minus nam numquam odio officia reiciendis, repellendus sed sit tenetur ullam
+      voluptatibus.</p>
+  </div>
+
+</ion-content>

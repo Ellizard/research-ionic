@@ -16,18 +16,31 @@
   </ion-list>
 
 
-  <ion-list radio-group>
-    <ion-item>
-      <ion-label>Male</ion-label>
-      <ion-radio value="male"></ion-radio>
+  <ion-list radio-group class="male-female">
+    <ion-item class="male">
+      <ion-label>
+        <ion-icon name="male" ></ion-icon>
+        Male
+
+      </ion-label>
+      <ion-radio value="male" checked></ion-radio>
     </ion-item>
 
-    <ion-item>
-      <ion-label>Female</ion-label>
+    <ion-item class="female">
+      <ion-label>
+        <ion-icon name="female"></ion-icon>
+        Female
+
+      </ion-label>
       <ion-radio value="female"></ion-radio>
     </ion-item>
 
   </ion-list>
+
+  <div class="bottom-buttons">
+    <button ion-button [navPush]="personalPage">Continue</button>
+    <a href="">Skip</a>
+  </div>
 
 
 </ion-content>
